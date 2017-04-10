@@ -1,5 +1,20 @@
 \documentclass[margin,line]{res}
 
+\newcommand{\tworow}[3]{
+  \begin{minipage}{\textwidth}
+  {#1} \hfill {#2}\\
+  {#3}
+  \end{minipage}
+}
+
+\newcommand{\threerow}[5]{
+  \begin{minipage}{\textwidth}
+  {#1} \hfill {#2}\\
+  {#3} \hfill {#4}\\
+  {#5}
+  \end{minipage}
+}
+
 \oddsidemargin -.5in
 \evensidemargin -.5in
 \textwidth=6.0in
@@ -22,6 +37,7 @@
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
       \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
 
 
 \begin{document}
