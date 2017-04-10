@@ -1,17 +1,17 @@
 \documentclass[margin,line]{res}
 
 \newcommand{\tworow}[3]{
-  \begin{minipage}{\textwidth}
-  {#1} \hfill {#2}\\
-  {#3}
+  \begin{minipage}{\linewidth}
+    {#1} \hfill {#2}\linebreak
+    {#3}
   \end{minipage}
 }
 
 \newcommand{\threerow}[5]{
-  \begin{minipage}{\textwidth}
-  {#1} \hfill {#2}\\
-  {#3} \hfill {#4}\\
-  {#5}
+  \begin{minipage}{\linewidth}
+    {#1} \hfill {#2}\linebreak
+    {#3} \hfill {#4}\linebreak
+    {#5}
   \end{minipage}
 }
 
@@ -55,17 +55,16 @@ Room 1107, Sandford Fleming Bldg. \\
 University of Toronto \\
 \end{tabular}
 
-\input{education}
 \input{research_interests}
 \input{industry_experience}
 \input{awards}
-
-\newpage
 \input{peer_publications}
 \input{presentations_posters}
 \input{teaching_experience}
 \input{uni_service}
 \input{professional_development}
+\input{education}
+
 
 
 \end{resume}
