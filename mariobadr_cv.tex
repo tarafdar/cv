@@ -1,11 +1,18 @@
 \documentclass[margin,line]{res}
 
+\newcommand{\onerow}[1]{
+  \begin{minipage}{\linewidth}
+    {#1}
+  \end{minipage}
+  \vspace{-0.25em}
+}
+
 \newcommand{\tworow}[3]{
   \begin{minipage}{\linewidth}
     {#1} \hfill {#2}\linebreak
     {#3}
   \end{minipage}
-  \vspace{-0.5em}
+  \vspace{-0.25em}
 }
 
 \newcommand{\threerow}[5]{
@@ -61,13 +68,12 @@ University of Toronto \\
 \input{industry_experience}
 \input{awards}
 \input{peer_publications}
-\input{presentations_posters}
+\input{refereed}
+\input{presentations}
 \input{teaching_experience}
 \input{uni_service}
 \input{professional_development}
 \input{education}
-
-
 
 \end{resume}
 \end{document}
