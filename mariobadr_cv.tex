@@ -1,13 +1,13 @@
 \documentclass[margin,line]{res}
 
-\newcommand{\onerow}[1]{
+\newcommand{\onecol}[1]{
   \begin{minipage}{\linewidth}
     {#1}
   \end{minipage}
   %\vspace{-0.45em}
 }
 
-\newcommand{\tworow}[3]{
+\newcommand{\twocol}[3]{
   \begin{minipage}{\linewidth}
     {#1} \hfill {#2}\linebreak
     {#3}
@@ -15,7 +15,7 @@
   %\vspace{-0.45em}
 }
 
-\newcommand{\threerow}[5]{
+\newcommand{\multicell}[5]{
   \begin{minipage}{\linewidth}
     {#1} \hfill {#2}\linebreak
     {#3} \hfill {#4}\linebreak
