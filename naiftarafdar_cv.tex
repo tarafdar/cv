@@ -1,0 +1,85 @@
+\documentclass[margin,line]{res}
+
+\newcommand{\onecol}[1]{
+  \begin{minipage}{\linewidth}
+    {#1}
+  \end{minipage}
+  %\vspace{-0.45em}
+}
+
+\newcommand{\twocol}[3]{
+  \begin{minipage}{\linewidth}
+    {#1} \hfill {#2}\linebreak
+    {#3}
+  \end{minipage}
+  %\vspace{-0.45em}
+}
+
+\newcommand{\multicell}[5]{
+  \begin{minipage}{\linewidth}
+    {#1} \hfill {#2}\linebreak
+    {#3} \hfill {#4}\linebreak
+    {#5}
+  \end{minipage}
+  %\vspace{-0.45em}
+}
+
+\usepackage{hyperref}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+
+\begin{document}
+
+\name{{Naif Tarafdar}
+\vspace*{.1in}}
+
+%\email{naif.tarafdar@mail.utoronto.ca}
+%\website{\url{https://www.eecg.toronto.edu/~tarafda1/}}
+
+\begin{resume}
+
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{5in}p{2in}}
+
+\onecol{\textbf{Email Address:} naif.tarafdar@mail.utoronto.ca} {} 
+\onecol{\textbf{Website:} \url{http://www.eecg.toronto.edu/~tarafda1/} } {}
+\end{tabular}
+
+
+\input{research_interests}
+\input{education}
+\input{industry_experience}
+\input{awards}
+\input{peer_publications}
+%\input{presentations}
+\input{software_artifacts}
+\input{teaching_experience}
+%\input{volunteer_experience}
+%\input{hobbies}
+
+\end{resume}
+\end{document}
