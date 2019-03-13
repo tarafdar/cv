@@ -234,11 +234,12 @@
 % this is used to print the name and address at the top of
 % the page with a hline in between
 %
-\def\namefont{\large\bf}
+\def\namefont{\Huge\bf}
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
   \vskip 2pt
+  %\\ \twocol{\textbf{Email:} naif.tarafdar@mail.utoronto.ca}{\textbf{Website:} \url{https://www.eecg.toronto.edu/~tarafda1/}{} \\
   \fullline
   \vskip 2pt
   % where do you live?
@@ -251,6 +252,7 @@
 		  }%
       }\par
   }
+
 \endgroup}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,15 +1,24 @@
-\section{\sc Software Artifacts}
+\section{\sc Projects}
 
-\twocol{\bf SimSync}{\it Apache License 2.0}
+\twocol{\bf Galapagos}{\it Custom License}
 {
-  A tool for analyzing the performance of multi-threaded applications on multi- and many-core processors.
-  SimSync focuses on the impact of synchronization on the performance of each thread.
-  Available: \textit{https://github.com/mariobadr/simsync-pmam}
+  A full hardware stack for creating and deploying multi-FPGA and CPU applications.
+  The stack allows users with different levels of proficiency target multi-FPGA and CPU applications at scale quickly.
+  The stack also is flexible and can be adapted to target different network architectures and protocols. 
+\\  Available: \textit{https://github.com/tarafdar/galapagos}
 }
 
-\twocol{\bf SynFull}{\it MIT License}
+\twocol{\bf HUMBoldt}{\it Custom License}
 {
-  Implementation of a statistical simulation methodology for design-space exploration of Networks-on-Chip.
-  Includes R scripts for creating models and an executable to generate synthetic traffic.
-  Available: \textit{https://github.com/mariobadr/synfull-isca}
+ A communication layer between multi-CPUs and FPGAs implemented using a subset of MPI. MPI cores built in hardware as Vivado HLS libraries are used to communicate using the network stack provided by the Galapagos project. 
+ This allows users to communicate amongst kernels implemented in CPUs and FPGAs by standardizing a protocol. 
+\\ Available: \textit{https://github.com/eskandarinariman/HMPI}
+}
+
+\twocol{\bf CLMonte}{\it MIT License}
+{
+    OpenCL implementation of photon simulation using Monte Carlo method.
+    This is used for applications like photodynamic cancer therapy.
+    We implemented this on GPUs, CPUs and FPGAs for acceleration to get a high quality result quickly. 
+\\    Available: \textit{https://github.com/tarafdar/CLMonte}
 }

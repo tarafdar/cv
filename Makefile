@@ -1,3 +1,3 @@
 
 all:
-	pdflatex mariobadr_cv.tex
+	pdflatex naiftarafdar_cv.tex
